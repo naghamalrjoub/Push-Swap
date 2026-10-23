@@ -1,4 +1,5 @@
 #include "header_files/pushswap.h"
+
 #include <stdio.h>
 
 static void	print_stack(char *twasel_ma3e, t_stack *s)
@@ -15,8 +16,13 @@ static void	print_stack(char *twasel_ma3e, t_stack *s)
 	printf("\n");
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+
+	parsing	p;
+	p = parsing_input(argv, argc);
+	printf("error = %d\n", p.error);
+	/*
 	t_stack	*a;
 	t_stack	*b;
 
@@ -49,6 +55,6 @@ int	main(void)
 	
 	rra(a, 1);
 	print_stack("rra    ", a);
-
+*/
 	return (0);
 }
