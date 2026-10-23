@@ -21,7 +21,21 @@ int	main(int argc, char **argv)
 
 	parsing	p;
 	p = parsing_input(argv, argc);
+    if (p.error)
+    {
+	    printf("error\n");
+        return 0;
+    }
+
 	printf("error = %d\n", p.error);
+    printf("return_value.is_bench = %d\n", p.is_bench);
+    printf("return_value.str = %d\n", p.str);
+    int i = 0;
+    while (i < p.size)
+    {
+        printf("return_value.data %d = %d\n",i, p.data[i]);
+        i++;
+    }
 	/*
 	t_stack	*a;
 	t_stack	*b;

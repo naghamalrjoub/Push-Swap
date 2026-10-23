@@ -35,8 +35,7 @@ typedef enum e_strategy{
     medium = 2,
     complex = 3,
 	adaptive = 4,
-	bench = 5,
-    NONE = -1
+	NONE = -1
 } t_strategy;
 
 typedef struct s_parsing
@@ -71,5 +70,11 @@ parsing	parsing_input(char **s, int size);
 int checking(char **s,int size);
 t_strategy	set_str(char *s);
 int	is_number(char *s);
+int	is_bench(char *s);
+int	isflage(char *s);
+int checking(char **s,int size);
+t_strategy add_str(char **s,int *start);
+int *add_data(char **s,int start,int size);
+int isdup(int *data,int size);
 
 #endif
