@@ -110,7 +110,7 @@ int *add_data(char **s,int start,int size)
 
 int isdup(int *data,int size)
 { 
-    //                              ||    (*_*)    || <-- guss who           
+    //                              ||    (*_*)    || <-- guess who           
     //ma ba3araf gheer hay al algho ||  /(     )\  || <-- the first letter is sanad
     //                              ||     - -     ||
     int i = 0;
